@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Catamaran:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+header{
+    display: inline;
+}
+
+.jumbotron {
+    background-image: url('./img/jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+    color: black;
+    text-align: center;
+    font-family: 'Bitter', sans-serif;
+}
+
+nav{
+    background-color: #ffa6ee;
+    padding: 5px;
+    top: 0;
+    position: sticky;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+main {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    flex-basis: 75%;
+}
+
+.formulir h3{
+    text-align: center;
+}
+
+.summary{
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.track h3{
+    text-align: center;
+}
+
+.summary th{
+    background-color: #ffa6ee;
+}
+
+.profile-card {
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile table {
+    margin: 20px;
+    width: 100%;
+}
+.profile th{
+    text-align: left;
+    width: 50%;
+}
+.sosmed h4{
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.tabelprofil {
+    text-align: left;
+}
+
+#logo {
+    margin-left: 37%;
+}
+
+footer {
+    background-color: #ffa6ee;
+    padding: 10px 0;
+    font-size: 0.75em;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+}
+
+.form {
+    flex-basis: 50%;
+}
+
+.form input, .form select {
+    width: 90%;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background-color: #ff3bbe;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.fa {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
+.btn a:active {
+    outline: none;
+}
+
+.summary tr:nth-child(even) {
+    background-color: #d2d2d2;
+ }
+
+@media screen and (max-width: 1000px) {
+    .jumbotron {
+        background-size: 100%;
+        padding: 50px;
+    }
+    nav {
+        padding: 5px 65px;
+    }
+    main {
+        position: static;
+        display: block;
+        padding-right: 0;
+    }
+
+    #content {
+        box-shadow: 2px 2px 5px grey;
+        border-radius: 15px;
+        margin: 0 25px;
+        padding: 20px;
+    }
+
+    .profile table{
+        margin-left: 20%;
+    }
+
+    article h3, .form-container {
+        display: block;
+        padding-left: 15%;
+    }
+
+    .profile-card {
+        box-shadow: none;
+        margin-left: 25%;
+    }
+
+}
+
+@media screen and (max-width: 513px) {
+    .profile table{
+        margin-left: 10px;
+    }
+
+    .track, .summary {
+        font-size: 0.75rem;
+    }
+
+    .profile-card {
+        margin-left: 10%;
+    }
+
+    .btn {
+        margin-left: 35%;
+    }
+
+}

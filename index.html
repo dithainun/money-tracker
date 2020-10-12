@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Money Tracker</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                    <h1>WELCOME TO MONEY TRACKER</h1>
+                    <p>For The Better Future Plan</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="content">
+                <article  class="track formulir">
+                    <h3>Create Your Financial Report</h3>
+                    <form name="form1">
+                        <div class="form-container">
+                            <div class="form col1">
+                                <section>
+                                    <label for="tanggal">Date: </label><br>
+                                    <input id="tanggal" name="tanggal" type="date" required>
+                                </section>
+                                <br>
+                                <section>
+                                    <label for="nominal">Amount of Money (Rp):</label><br>
+                                    <input id="nominal" name="nominal" type="number" placeholder="Amount" required>
+                                </section>
+                            </div>
+                            <div class="form col2">
+                                <section id="selected" required>
+                                    <label for="financetype">Income / Outcome?:</label><br>
+                                    <select id="financetype" name="financetype">
+                                        <option class="financeoption" value="income">Income</option>
+                                        <option class="financeoprion" value="outcome">Outcome</option>
+                                    </select>
+                                </section>
+                                <br>
+                                <section>
+                                    <label for="notes">Notes(optional):</label><br>
+                                    <input id="notes" name="notes" type="text" placeholder="Notes">
+                                </section>
+                            </div>   
+                        </div>
+                        <input type="submit" class="btn submit" name="submit" value="Submit">
+                    </form>
+                    <button class="btn clear">Clear Track</button>
+                </article>
+                <article class="track card">
+                    <h3>Cash Summary</h3>
+                    <table class="summary">
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Pendapatan</th>
+                                <th>Pengeluaran</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trackList"></tbody>
+                    </table>
+                </article>        
+            </div>  
+            <aside>
+                <div class="profile-card">
+                    <section class="profile">
+                        <h2>Profile</h2>
+                        <img src="assets/img/profil.jpg">
+                        <br>
+                        <table id="tabelprofil">
+                            <tr>
+                                <th>Nama:</th>
+                                <td>Ditha Ainun</td>
+                            </tr>
+                            <tr>
+                                <th>TTL:</th>
+                                <td> 16 Mei 1998</td>
+                            </tr>
+                            <tr>
+                                <th>Pekerjaan:</th>
+                                <td>Mahasiswa</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="sosmed">
+                        <h4>Social Media</h4>
+                        <div id="logo">
+                                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                                <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                                <a href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <p>2020 &#169; Project Dasar Pemrograman Web - Dicoding Academy</p>
+        </footer>
+        <script src="assets/main.js"></script>
+        <script src="assets/storage.js"></script>
+    </body>
+</html>
